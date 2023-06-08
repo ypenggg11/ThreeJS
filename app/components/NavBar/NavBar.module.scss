@@ -1,0 +1,50 @@
+.nav-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  background: var(--primary-color);
+
+  & .link-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    & .link {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+}
+
+.author {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+
+  @media (min-width: 640px) {
+    display: none;
+  }
+}
+
+.list {
+  list-style: none;
+  display: none;
+
+  @media (min-width: 640px) {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+}
+

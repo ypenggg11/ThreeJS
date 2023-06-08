@@ -1,0 +1,17 @@
+.root-container {
+  position: relative;
+  z-index: 0;
+  background-color: var(--primary-color);
+}
+
+.root-background {
+  background: var(--hero-background);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact-container {
+  position: relative;
+  z-index: 0;
+}

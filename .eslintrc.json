@@ -9,6 +9,10 @@
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
     "jsx-quotes": [2, "prefer-single"],
-    "react/jsx-one-expression-per-line": "off"
+    "react/jsx-one-expression-per-line": "off",
+    "object-curly-newline": "off",
+    "linebreak-style": "off",
+    "import/extensions": "off",
+    "comma-dangle": "off"
   }
 }
