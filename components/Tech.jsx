@@ -1,5 +1,3 @@
 export default function Tech() {
-  return (
-    <div>Tech</div>
-  )
+  return <div>Tech</div>
 }
