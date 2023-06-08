@@ -31,9 +31,14 @@
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
+  display: flex;
 
-  @media (min-width: 640px) {
+  & .block {
     display: none;
+
+    @media (min-width: 640px) {
+      display: block;
+    }
   }
 }
 
@@ -45,5 +50,95 @@
     display: flex;
     flex-direction: row;
     gap: 2.5rem;
+  }
+
+  & .list-item {
+    font-size: 18px;
+
+    & a {
+      color: var(--secondary-color);
+    }
+
+    &:hover {
+      & a {
+        color: white;
+      }
+
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    &.active {
+      & a {
+        color: white;
+      }
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  flex: 1 1 0%;
+  justify-content: flex-end;
+  align-items: center;
+
+  @media (min-width: 640px) {
+    display: none;
+  }
+}
+
+.image {
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.menu-modal {
+  display: flex;
+  padding: 1.5rem;
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  z-index: 10;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  min-width: 140px;
+  border-radius: 0.75rem;
+
+  &.hide {
+    display: none;
+  }
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+
+  & .list-item {
+    font-size: 16px;
+
+    & a {
+      color: var(--secondary-color);
+    }
+
+    &:hover {
+      & a {
+        color: white;
+      }
+
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    &.active {
+      & a {
+        color: white;
+      }
+    }
   }
 }
