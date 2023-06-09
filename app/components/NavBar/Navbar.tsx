@@ -32,7 +32,8 @@ export default function Navbar() {
             className={styles.image}
           />
           <p className={styles.author}>
-            Peng &nbsp; <span className={styles.block}>| Portfolio</span>
+            Peng&nbsp;
+            <span className={styles.block}>| Portfolio</span>
           </p>
         </Link>
         <ul className={styles.list}>

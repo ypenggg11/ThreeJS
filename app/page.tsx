@@ -1,5 +1,4 @@
 import {
-  Hero,
   About,
   Experience,
   Tech,
@@ -9,7 +8,7 @@ import {
   StarsCanvas,
 } from '@/components'
 import styles from './page.module.scss'
-import { Navbar } from './components/NavBar'
+import { Navbar, Hero } from './components'
 
 export default function RootPage() {
   return (
