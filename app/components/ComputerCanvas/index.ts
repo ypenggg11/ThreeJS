@@ -1,1 +1,1 @@
-export { default as ComputerCanvas } from './ComputerCanvas';
+export { default as ComputerCanvas } from './ComputerCanvas'

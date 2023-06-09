@@ -1,1 +1,1 @@
-export { default as CanvasLoader } from './CanvasLoader';
+export { default as CanvasLoader } from './CanvasLoader'
